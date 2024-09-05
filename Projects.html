@@ -3,184 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Tadi Mutekwe</title>
+    <meta name="description" content="Project Specification Document by Tadi Mutekwe">
+    <title>Project Specification - Tadi Mutekwe</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 25px;
             color: #333;
             line-height: 1.6;
+            background-color: #f5f5f5;
         }
         header {
-            background: #007bff;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
+            font-size: 2em;
+            color: #4CAF50;
         }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            overflow: hidden;
-        }
-        .intro {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-        .intro p {
+        header p {
             margin: 0;
-            font-size: 1.1em;
-            color: #555;
+            font-size: 1em;
+            color: #777;
         }
-        .project {
-            background: #fff;
-            margin-bottom: 20px;
+        section {
+            margin-bottom: 30px;
+            background-color: #fff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .project h2 {
-            color: #007bff;
+        h2, h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
         }
-        .project p {
-            margin: 10px 0;
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
         }
-        .project ul {
+        h3 {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        ul {
             list-style-type: none;
             padding: 0;
         }
-        .project ul li {
-            padding: 5px 0;
+        ul li {
+            padding: 8px 0;
+            margin-left: 20px;
+            position: relative;
         }
-        .project ul li i {
-            color: #007bff;
+        ul li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            color: #4CAF50;
+            font-weight: 900;
+            display: inline-block;
             margin-right: 10px;
         }
         .github-link {
+            margin-top: 20px;
             display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background: #007bff;
-            color: #fff;
+            font-size: 1.1em;
+            color: #4CAF50;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
+            font-weight: bold;
+            transition: color 0.3s ease;
         }
         .github-link:hover {
-            background: #0056b3;
+            color: #388E3C;
+        }
+        .github-link i {
+            margin-right: 8px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            color: #777;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Project Specification - Tadi Mutekwe</h1>
+        <p>Page 1</p>
+    </header>
 
-<header>
-    <h1>Tadi Mutekwe - Project Portfolio</h1>
-</header>
-
-<div class="container">
-
-    <div class="intro">
+    <section>
         <p>This document outlines several key software development and data science projects I have completed. These projects span mobile app development, educational software, web development, and data analysis. My GitHub repositories contain the source code for all these projects.</p>
-    </div>
+    </section>
 
-    <div class="project">
+    <section>
         <h2>Project 1: Flutter Fitness Tracker App</h2>
+        <h3>Overview</h3>
         <p>The Flutter Fitness Tracker is a comprehensive mobile application that enables users to dynamically log and manage their workouts and exercises. The app uses the Hive database to store user data, such as names, workouts, exercise details, weights, and consistency progress.</p>
+
         <h3>Key Features</h3>
         <ul>
-            <li><i class="fa-solid fa-dumbbell"></i> <strong>Dynamic Workout Management:</strong> Users can log new workouts and exercises, specifying details like weights, repetitions, and sets.</li>
-            <li><i class="fa-solid fa-database"></i> <strong>Data Persistence:</strong> Utilizes Hive database for persistent storage of user data, ensuring that workout history and progress are maintained across sessions.</li>
-            <li><i class="fa-solid fa-chart-bar"></i> <strong>Progress Visualization:</strong> Includes a heatmap widget to visualize monthly workout consistency, helping users track their fitness goals.</li>
+            <li><strong>Dynamic Workout Management:</strong> Users can log new workouts and exercises, specifying details like weights, repetitions, and sets.</li>
+            <li><strong>Data Persistence:</strong> Utilizes Hive database for persistent storage of user data, ensuring that workout history and progress are maintained across sessions.</li>
+            <li><strong>Progress Visualization:</strong> Includes a heatmap widget to visualize monthly workout consistency, helping users track their fitness goals.</li>
         </ul>
+
         <h3>Technologies Used</h3>
         <ul>
-            <li><i class="fa-solid fa-code"></i> <strong>Languages:</strong> Dart</li>
-            <li><i class="fa-solid fa-cogs"></i> <strong>Framework:</strong> Flutter</li>
-            <li><i class="fa-solid fa-database"></i> <strong>Database:</strong> Hive</li>
-            <li><i class="fa-solid fa-tools"></i> <strong>Tools:</strong> Android Studio, Visual Studio Code</li>
+            <li><strong>Languages:</strong> Dart</li>
+            <li><strong>Framework:</strong> Flutter</li>
+            <li><strong>Database:</strong> Hive</li>
+            <li><strong>Tools:</strong> Android Studio, Visual Studio Code</li>
         </ul>
-        <a href="https://github.com/Tadiwanashe-M/Fitness-Application" class="github-link"><i class="fab fa-github"></i> View GitHub Repository</a>
-    </div>
 
-    <div class="project">
+        <a class="github-link" href="https://github.com/Tadiwanashe-M/Fitness-Application" target="_blank">
+            <i class="fab fa-github"></i> View GitHub Repository
+        </a>
+    </section>
+
+    <section>
         <h2>Project 2: Unity C# Assessment App</h2>
+        <h3>Overview</h3>
         <p>The Unity C# Assessment App is a versatile tool designed for educators to create and manage online assessments. The app automatically exports assessment results to a CSV file, enabling large-scale data analysis to identify student performance trends.</p>
+
         <h3>Key Features</h3>
         <ul>
-            <li><i class="fa-solid fa-file-alt"></i> <strong>Customizable Assessments:</strong> Educators can create assessments with dynamic content, adjusting questions and formats as needed.</li>
-            <li><i class="fa-solid fa-file-export"></i> <strong>Automated Data Export:</strong> Exports results, including student names, IDs, and answers, to a CSV file for further analysis.</li>
-            <li><i class="fa-solid fa-chart-line"></i> <strong>Data Analysis Potential:</strong> The exported data can be used to assess student performance and identify areas for improvement.</li>
+            <li><strong>Customizable Assessments:</strong> Educators can create assessments with dynamic content, adjusting questions and formats as needed.</li>
+            <li><strong>Automated Data Export:</strong> Exports results, including student names, IDs, and answers, to a CSV file for further analysis.</li>
+            <li><strong>Data Analysis Potential:</strong> The exported data can be used to assess student performance and identify areas for improvement.</li>
         </ul>
+
         <h3>Technologies Used</h3>
         <ul>
-            <li><i class="fa-solid fa-code"></i> <strong>Languages:</strong> C#</li>
-            <li><i class="fa-solid fa-cogs"></i> <strong>Framework:</strong> Unity</li>
-            <li><i class="fa-solid fa-tools"></i> <strong>Tools:</strong> Visual Studio, Unity Editor</li>
+            <li><strong>Languages:</strong> C#</li>
+            <li><strong>Framework:</strong> Unity</li>
+            <li><strong>Tools:</strong> Visual Studio, Unity Editor</li>
         </ul>
-        <a href="https://github.com/Tadiwanashe-M/Unity-C-Assessment-Application-" class="github-link"><i class="fab fa-github"></i> View GitHub Repository</a>
-    </div>
 
-    <div class="project">
+        <a class="github-link" href="https://github.com/Tadiwanashe-M/Unity-C-Assessment-Application-" target="_blank">
+            <i class="fab fa-github"></i> View GitHub Repository
+        </a>
+    </section>
+
+    <section>
         <h2>Project 3: Website for Startup Mining Company</h2>
+        <h3>Overview</h3>
         <p>This project involved designing and developing a fully functional website for a startup mining company. The website was coded using HTML, CSS, and JavaScript, and I was responsible for both its deployment and ongoing maintenance.</p>
+
         <h3>Key Features</h3>
         <ul>
-            <li><i class="fa-solid fa-mobile-alt"></i> <strong>Responsive Design:</strong> The website is fully responsive, ensuring optimal viewing experiences across desktops, tablets, and smartphones.</li>
-            <li><i class="fa-solid fa-bolt"></i> <strong>Interactive Features:</strong> Includes JavaScript-driven interactive elements such as a dynamic contact form, image sliders, and company updates.</li>
-            <li><i class="fa-solid fa-cloud-upload-alt"></i> <strong>Deployment and Hosting:</strong> The website was deployed and hosted using a reliable web hosting service, ensuring 99.9% uptime and fast load times.</li>
+            <li><strong>Responsive Design:</strong> The website is fully responsive, ensuring optimal viewing experiences across desktops, tablets, and smartphones.</li>
+            <li><strong>Interactive Features:</strong> Includes JavaScript-driven interactive elements such as a dynamic contact form, image sliders, and company updates.</li>
+            <li><strong>Deployment and Hosting:</strong> The website was deployed and hosted using a reliable web hosting service, ensuring 99.9% uptime and fast load times.</li>
         </ul>
+
         <h3>Technologies Used</h3>
         <ul>
-            <li><i class="fa-solid fa-code"></i> <strong>Languages:</strong> HTML, CSS, JavaScript</li>
-            <li><i class="fa-solid fa-tools"></i> <strong>Tools:</strong> Visual Studio Code, Git</li>
+            <li><strong>Languages:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Tools:</strong> Visual Studio Code, Git</li>
         </ul>
-        <a href="https://github.com/Tadiwanashe-M/CrystalCaveResources-" class="github-link"><i class="fab fa-github"></i> View GitHub Repository</a>
-    </div>
 
-    <div class="project">
+        <a class="github-link" href="https://github.com/Tadiwanashe-M/CrystalCaveResources-" target="_blank">
+            <i class="fab fa-github"></i> View GitHub Repository
+        </a>
+    </section>
+
+    <section>
         <h2>Project 4: Flutter Layout and Digital Forms</h2>
+        <h3>Overview</h3>
         <p>This project involves creating various Flutter-based digital forms and UI layouts for online web applications. The forms are optimized for user input, providing a seamless and responsive experience across different devices.</p>
+
         <h3>Key Features</h3>
         <ul>
-            <li><i class="fa-solid fa-list-alt"></i> <strong>Advanced Form Design:</strong> Includes complex forms with multiple input types, such as dropdowns and text fields, ensuring comprehensive data collection.</li>
-            <li><i class="fa-solid fa-mobile-alt"></i> <strong>Responsive Design:</strong> Layouts adapt to various screen sizes, enhancing user experience and accessibility.</li>
+            <li><strong>Advanced Form Design:</strong> Includes complex forms with multiple input types, such as dropdowns and text fields, ensuring comprehensive data collection.</li>
+            <li><strong>Responsive Design:</strong> Layouts adapt to various screen sizes, enhancing user experience and accessibility.</li>
         </ul>
+
         <h3>Technologies Used</h3>
         <ul>
-            <li><i class="fa-solid fa-code"></i> <strong>Languages:</strong> Dart</li>
-            <li><i class="fa-solid fa-cogs"></i> <strong>Framework:</strong> Flutter</li>
-            <li><i class="fa-solid fa-tools"></i> <strong>Tools:</strong> Android Studio, Visual Studio Code</li>
+            <li><strong>Languages:</strong> Dart</li>
+            <li><strong>Framework:</strong> Flutter</li>
+            <li><strong>Tools:</strong> Visual Studio Code</li>
         </ul>
-        <a href="https://github.com/Tadiwanashe-M" class="github-link"><i class="fab fa-github"></i> View GitHub Repository</a>
-    </div>
+    </section>
 
-    <div class="project">
-        <h2>Project 5: Comprehensive Data Analysis and Machine Learning</h2>
-        <p>This project demonstrates my expertise in data analysis and machine learning using Python. I conducted comprehensive data analysis, visualization, and predictive modeling on a large dataset, providing actionable insights.</p>
-        <h3>Key Features</h3>
-        <ul>
-            <li><i class="fa-solid fa-broom"></i> <strong>Data Cleaning and Preprocessing:</strong> Extensive data cleaning and transformation using Pandas and NumPy to prepare datasets for analysis.</li>
-            <li><i class="fa-solid fa-chart-line"></i> <strong>Advanced Data Visualization:</strong> Creation of informative visualizations using Matplotlib and Seaborn, highlighting key trends and patterns.</li>
-            <li><i class="fa-solid fa-robot"></i> <strong>Predictive Modeling:</strong> Implementation of machine learning models using Scikit-learn to predict outcomes and identify potential opportunities.</li>
-        </ul>
-        <h3>Technologies Used</h3>
-        <ul>
-            <li><i class="fa-solid fa-code"></i> <strong>Languages:</strong> Python</li>
-            <li><i class="fa-solid fa-chart-bar"></i> <strong>Libraries:</strong> Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn</li>
-            <li><i class="fa-solid fa-tools"></i> <strong>Tools:</strong> Jupyter Notebook, VS Code</li>
-        </ul>
-        <a href="https://github.com/Tadiwanashe-M" class="github-link"><i class="fab fa-github"></i> View GitHub Repository</a>
-    </div>
-
-</div>
-
-</body>
-</html>
+    <section>
+       
